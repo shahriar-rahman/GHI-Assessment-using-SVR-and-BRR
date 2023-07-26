@@ -98,6 +98,6 @@ and a is the penalty coefficient
 
 </br></br>
 
-### *ReadMe Construction in Progress...*
+### *ReadMe Construction still in Progress...*
 
 </br>
