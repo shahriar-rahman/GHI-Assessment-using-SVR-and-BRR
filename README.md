@@ -64,6 +64,22 @@ PCA is commonly applied in exploratory data analysis and for making predictive m
 
 </br>
 
+### ◘ Support Vector Regression (SVR)
+SVR is a regression function that is generalized by Support Vector Machines - a machine learning model used for data classification on continuous data. In simple regression, the idea is to minimize the error rate while in SVR the idea is to fit the error inside a certain threshold which means, the work of SVR is to approximate the best value within a given margin by finding the optimal decision boundary that maximally separates different points.
+
+</br>
+
+```
+y^ = WTx+b
+Where y^,WT,x, and b  are defined as:
+y^: Estimated value
+WT: Weight vector
+x: Explanatory variable
+b: Bias term
+```
+
+</br></br>
+
 
 ### *ReadMe Construction in Progress...*
 
