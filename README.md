@@ -30,7 +30,12 @@ The primary initiative of this research is to:
 * Conduct a thorough analysis in order to estimate the Global Horizontal Irradiance on the earth's atmosphere using the NSRDB weather data.
 * Compare and contrast the results from the models and reach a conclusion on which model to select based on effectiveness and performance.
 
-</br></br>
+</br>
+
+### ◘ Feature Transformations Flowchart
+![alt text](https://github.com/shahriar-rahman/GHI-Assessment-using-SVR-and-BRR/blob/main/img/Flow1.JPG)
+
+</br>
 
 ### ◘ Approach
 * Process and convert the modified data to increase the interpretability of the models.
@@ -41,6 +46,7 @@ The primary initiative of this research is to:
 * Analyze the correct Hyperparameters for the aforementioned models.
 * Appy all the information to initiate the training procedure of the models
 * Evaluate the model performance and pinpoint the strengths and weaknesses.
+
 
 
 
