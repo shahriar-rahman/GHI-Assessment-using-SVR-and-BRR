@@ -30,12 +30,7 @@ The primary initiative of this research is to:
 * Conduct a thorough analysis in order to estimate the Global Horizontal Irradiance on the earth's atmosphere using the NSRDB weather data.
 * Compare and contrast the results from the models and reach a conclusion on which model to select based on effectiveness and performance.
 
-</br>
-
-### ◘ Feature Transformations Flowchart
-![alt text](https://github.com/shahriar-rahman/GHI-Assessment-using-SVR-and-BRR/blob/main/img/Flow1.JPG)
-
-</br>
+</br></br>
 
 ### ◘ Approach
 * Process and convert the modified data to increase the interpretability of the models.
@@ -47,7 +42,27 @@ The primary initiative of this research is to:
 * Appy all the information to initiate the training procedure of the models
 * Evaluate the model performance and pinpoint the strengths and weaknesses.
 
+</br>
 
+### ◘ Feature Transformations Flowchart
+![alt text](https://github.com/shahriar-rahman/GHI-Assessment-using-SVR-and-BRR/blob/main/img/Flow1.JPG)
+
+</br>
+
+
+### Principal Component Analysis (PCA)
+In this case study, the acquired dataset contains attributes that can be considered correlated despite some inconsistencies that primarily stem due to seasonal alterations and other variables not present in the weather data. The multiple explanatory variables in the multiple regression model being highly linearly related, can cause a multicollinearity issue. This would lead to the model finding it challenging to interpret the coefficients, resulting in reduced power of the model to identify independent variables that are statistically significant, which would be a serious problem. To address this issue,PCA is applied and combined with the Cross Validation technique to find an average score for all the predictor variables involved.
+
+</br>
+
+PCA is commonly applied in exploratory data analysis and for making predictive models and is mostly used for dimensionality reduction by projecting each data point onto only the first few principal components to obtain lower-dimensional data while preserving as much of the data's variation as possible. The principal components of a collection of points in a real coordinate space are a sequence of *p-unit* vectors, where the *i*th vector is the direction of a line that best fits the data while being orthogonal to the first *i-1* vectors. Therefore, the PCA technique is utilized for analyzing large datasets containing many dimensions/features per observation, increasing the interpretability of the data by reducing the dimensionality of a dataset while preserving the maximum amount of information, and enabling the visualization of multidimensional data. 
+
+</br>
+
+### ◘ Model Training Flowchart
+![alt text](https://github.com/shahriar-rahman/GHI-Assessment-using-SVR-and-BRR/blob/main/img/Flow2.JPG)
+
+</br>
 
 
 ### *ReadMe Construction in Progress...*
