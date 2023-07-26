@@ -65,7 +65,7 @@ PCA is commonly applied in exploratory data analysis and for making predictive m
 </br>
 
 ### ◘ Support Vector Regression (SVR)
-SVR is a regression function that is generalized by Support Vector Machines - a machine learning model used for data classification on continuous data. In simple regression, the idea is to minimize the error rate while in SVR the idea is to fit the error inside a certain threshold which means, the work of SVR is to approximate the best value within a given margin by finding the optimal decision boundary that maximally separates different points.
+SVR is a regression function that is generalized by Support Vector Machines - a machine learning model used for data classification on continuous data. In simple regression, the idea is to minimize the error rate while in SVR the idea is to fit the error inside a certain threshold which means, the work of SVR is to approximate the best value within a given margin by finding the optimal decision boundary that maximally separates different points. Such regression line is represented as:
 
 </br>
 
@@ -80,6 +80,23 @@ b: Bias term
 
 </br></br>
 
+### ◘ Bayesian Ridge Regression (BRR)
+BRR follows Bayes' theorem which describes the conditional probability of an event based on prior knowledge of conditions that might be related to the event. Since Bayesian statistics treat probability as a degree of belief, Bayes' theorem can directly assign a probability distribution that quantifies the belief to the parameter or set of parameters. As a result, BRR allows a natural mechanism to survive insufficient data or poorly distributed data by formulating linear regression using probability distribution rather than point estimates. The output or response ‘y’ is assumed to be drawn from a probability distribution rather than estimation as a single value.  Mathematically, to obtain a fully probabilistic model the response y is assumed to be Gaussian distributed around Xw as follows:
+
+</br>
+
+```
+p(y | X, w, a) = N(y | X, w, a)
+where w is the weight
+and a is the penalty coefficient
+```
+
+</br>
+
+### ◘ Model Testing Flowchart
+![alt text](https://github.com/shahriar-rahman/GHI-Assessment-using-SVR-and-BRR/blob/main/img/Flow3.JPG)
+
+</br></br>
 
 ### *ReadMe Construction in Progress...*
 
