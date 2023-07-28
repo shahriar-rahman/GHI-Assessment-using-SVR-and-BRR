@@ -100,7 +100,7 @@ and a is the penalty coefficient
 
 ### Model Evaluation
 | Measurement | SVR Training | BRR Training | SVR Test | BRR Test |
-|__|__|__|__|__|
+| __ | __ | __ | __ | __ |
 | MSE | 0.0015 | 7.27e-06 | 0.0015 | 6.94e-3 |   
 | MAE | 0.0318 | 0.0014 | 0.0320 | 0.0622 |
 | RMSE | 0.0392 | 0.0026 | 0.0387 | 0.0834 |
