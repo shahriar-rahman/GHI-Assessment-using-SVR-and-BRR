@@ -98,7 +98,7 @@ and a is the penalty coefficient
 
 </br></br>
 
-### Model Evaluation
+### ◘ Model Evaluation
 | **Measurement** | **SVR Training** | **BRR Training** | **SVR Test** | **BRR Test** |
 | -- | -- | -- | -- | -- |
 | MSE | 0.0015 | 7.27e-06 | 0.0015 | 6.94e-3 |   
@@ -161,7 +161,103 @@ and a is the penalty coefficient
 
 <br/><br/>
 
+### ◘ Libraries & Technologies utilized
+* matplotlib~=3.7.1
+* polars~=0.18.8
+* seaborn~=0.12.2
+* scikit-learn~=1.2.2
+* missingno~=0.5.2
+* numpy~=1.24.2
+* joblib~=1.2.0
+* setuptools~=65.5.1
 
-### *ReadMe Construction still in Progress...*
 
-</br>
+<br/><br/>
+
+
+<br/><br/>
+
+### ◘ Module Installation (setup.py)
+1. To use the *setup.py* file in Python, the first objective is to have the *setuptools* module installed. It can be accomplished by running the following command:
+```
+pip install setuptools                                     
+```
+2. Once the setuptools module is installed, use the setup.py file to build and distribute the Python package by running the following command:
+```
+python setup.py sdist bdist_wheel
+```
+3. In order to install the my_package package, run the following command:
+```
+pip install my_package                                 
+```
+4. This command will install all the requirements:
+```
+pip install .                                 
+```
+5. This will install the my_package package and any of its dependencies that are not already installed on your system. Once the package is installed, you can use it in your Python programs by importing it like any other module. For example:
+```
+import my_package                                
+```
+
+<br/><br/>
+
+### ◘ Python Library Installation (using pip)
+In order to *install* the required packages on the local machine, Open pip and run the following commands separately:
+```
+> pip install setuptools                    
+
+> pip install polars                                                          
+
+> pip install scikit-learn                                      
+
+> pip install seaborn
+
+> pip install matplotlib
+
+> pip install missingno
+
+> pip install numpy
+
+> pip install joblib                                  
+```
+
+<br/><br/>
+
+### ◘ Supplementary Resources
+For more details, visit the following links:
+* https://pypi.org/project/setuptools/
+* https://pypi.org/project/polars/
+* https://pypi.org/project/scikit-learn/
+* https://pypi.org/project/seaborn/
+* https://pypi.org/project/matplotlib/
+* https://pypi.org/project/missingno/
+* https://pypi.org/project/numpy/
+* https://pypi.org/project/joblib/
+
+<br/><br/>
+
+### ◘ MIT License
+Copyright (c) 2023 Shahriar Rahman
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+<br/>
+
+===========================================================================
+
