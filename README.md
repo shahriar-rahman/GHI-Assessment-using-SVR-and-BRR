@@ -118,41 +118,43 @@ and a is the penalty coefficient
     ├─-- dataset                # Different types of data derived from the original raw dataset
     |    └──  processed        
     |    └──  raw
-    |    └──  scaled
-    |    └──  test_set
-    |
-    |
-    ├─-- models                 # Trained and serialized models for future model predictions  
-    |    └── gpr_minmax.pkl
-    |    └── gpr_robust.pkl
-    |    └── gpr_standard.pkl
-    |
-    |
+    |    └──  tests
+    |    └──  transformed
+    |    
     ├─ graphs                    # Generated graphics and figures obtained from visualization.py
     |
     |
     ├─-- img                    # Project related files
     |
-    ├─-- requirements.txt       # The requirements file for reproducing the analysis environments
-    |                         
     |
-    ├─-- setup.py               # makes project pip installable, so that src can be imported
+    ├─-- models                 # Trained and serialized models for future model predictions  
+    |    └── svr.pkl
+    |    └── brr.pkl
     |
     |
     ├─-- src                    # Source code for use in this research
     |   └───-- __init__.py    
     |   |
+    |   |
     |   ├─-- features            # Scripts to modify the raw data into different types of features for modeling
-    |   |   └── feature_preprocessing.py
-    |   |   └── feature_exploration.py
-    |   |   └── feature_transformation.py
+    |   |   └── feature_transformations.py
+    |   |
     |   |
     |   ├─-- models                # Contains py filess for inspecting hyperparameters, training, and using trained models to make predictions         
-    |   |   └─── predict_model.py
-    |   |   └─── train_model.py
+    |   |   └─── predict_model_brr.py
+    |   |   └─── predict_model_svr.py
+    |   |   └─── train_model_brr.py
+    |   |   └─── train_model_svr.py
+    |   |
     |   |
     |   └───-- visualization        # Construct exploratory and result oriented visualizations to identify and reaffirm patterns
     |       └───-- visualize.py
+    |
+    |
+    ├─-- requirements.txt       # The requirements file for reproducing the analysis environments
+    |                         
+    |
+    ├─-- setup.py               # makes project pip installable, so that src can be imported
     |
     ├─
 --------
