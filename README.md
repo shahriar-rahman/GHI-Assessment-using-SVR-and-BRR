@@ -98,6 +98,12 @@ and a is the penalty coefficient
 
 </br></br>
 
+### Model Evaluation
+| Model | Training Data | Test Data |
+| | | | MSE | MAE | RMSE | MSE | MAE | RMSE |
+|___|___|___|___|___|___|___|___|___|  
+
+
 ### *ReadMe Construction still in Progress...*
 
 </br>
