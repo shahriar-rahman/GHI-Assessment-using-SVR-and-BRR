@@ -99,13 +99,65 @@ and a is the penalty coefficient
 </br></br>
 
 ### Model Evaluation
-| Measurement | SVR Training | BRR Training | SVR Test | BRR Test |
+| **Measurement** | **SVR Training** | **BRR Training** | **SVR Test** | **BRR Test** |
 | -- | -- | -- | -- | -- |
 | MSE | 0.0015 | 7.27e-06 | 0.0015 | 6.94e-3 |   
 | MAE | 0.0318 | 0.0014 | 0.0320 | 0.0622 |
 | RMSE | 0.0392 | 0.0026 | 0.0387 | 0.0834 |
 | R-Squared | 0.9751 | 0.9998 | 0.9780 | 0.8977 |
 
+
+<br/><br/>
+
+### ◘ Project Organization
+------------
+    ├─-- LICENSE
+    |
+    ├─-- README.md              # The top-level README for developers using this project
+    |
+    ├─-- dataset                # Different types of data derived from the original raw dataset
+    |    └──  processed        
+    |    └──  raw
+    |    └──  scaled
+    |    └──  test_set
+    |
+    |
+    ├─-- models                 # Trained and serialized models for future model predictions  
+    |    └── gpr_minmax.pkl
+    |    └── gpr_robust.pkl
+    |    └── gpr_standard.pkl
+    |
+    |
+    ├─ graphs                    # Generated graphics and figures obtained from visualization.py
+    |
+    |
+    ├─-- img                    # Project related files
+    |
+    ├─-- requirements.txt       # The requirements file for reproducing the analysis environments
+    |                         
+    |
+    ├─-- setup.py               # makes project pip installable, so that src can be imported
+    |
+    |
+    ├─-- src                    # Source code for use in this research
+    |   └───-- __init__.py    
+    |   |
+    |   ├─-- features            # Scripts to modify the raw data into different types of features for modeling
+    |   |   └── feature_preprocessing.py
+    |   |   └── feature_exploration.py
+    |   |   └── feature_transformation.py
+    |   |
+    |   ├─-- models                # Contains py filess for inspecting hyperparameters, training, and using trained models to make predictions         
+    |   |   └─── predict_model.py
+    |   |   └─── train_model.py
+    |   |
+    |   └───-- visualization        # Construct exploratory and result oriented visualizations to identify and reaffirm patterns
+    |       └───-- visualize.py
+    |
+    ├─
+--------
+
+<br/><br/>
 
 
 ### *ReadMe Construction still in Progress...*
