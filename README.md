@@ -99,9 +99,13 @@ and a is the penalty coefficient
 </br></br>
 
 ### Model Evaluation
-| Model | Training Data | Test Data |
-| | | | MSE | MAE | RMSE | MSE | MAE | RMSE |
-|___|___|___|___|___|___|___|___|___|  
+| Measurement | SVR Training | BRR Training | SVR Test | BRR Test |
+|__|__|__|__|__|
+| MSE | 0.0015 | 7.27e-06 | 0.0015 | 6.94e-3 |   
+| MAE | 0.0318 | 0.0014 | 0.0320 | 0.0622 |
+| RMSE | 0.0392 | 0.0026 | 0.0387 | 0.0834 |
+| R-Squared | 0.9751 | 0.9998 | 0.9780 | 0.8977 |
+
 
 
 ### *ReadMe Construction still in Progress...*
