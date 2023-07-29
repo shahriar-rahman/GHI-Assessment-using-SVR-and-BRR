@@ -23,6 +23,7 @@
 	- [Component Evaluation using Cross Validation](#-component-evaluation-using-cross-validation)
  	- [CV Scores Graph by applying PCA-SVR](#-cv-score-graph-by-applying-pca-svr)
  	- [CV Scores Graph by applying PCA-BRR](#-cv-score-graph-by-applying-pca-brr)
+  	- [Grid CV Analysis](#-grid-cv-analysis)
 	- [Model Evaluation](#-model-evaluation)
 - [Project Organization](#-project-organization)
 - [Libraries & Technologies utilized](#-libraries-&-technologies-utilized)
@@ -154,6 +155,18 @@ and a is the penalty coefficient
 
 ### • CV Score Graph by applying PCA-BRR
 ![alt text](https://github.com/shahriar-rahman/GHI-Assessment-using-SVR-and-BRR/blob/main/graphs/cv_score_comparison_brr.png)
+
+</br>
+
+### • Grid CV Analysis
+| Hyperparameters | SVR | BRR | 
+| Alpha | N/A | 3e-06 |
+| Lambda | N/A | 1e-06 |
+| Iteration | N/A | 200 |
+| Regularization | 1.0 | N/A |
+| Epsilon | 0.1 | N/A |
+| Kernel | Radial Basis Function | N/A |
+| Ideal Score | -0.0016 | -7.32e-06 |
 
 </br>
 
