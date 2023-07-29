@@ -8,10 +8,13 @@
 </br>
 
 - [Introduction](#-introduction)
-- [Objective](#-objective)
-- [Approach](#-approach)
+	- [Background](#-background)
+	- [Objective](#-objective)
+- [Technical Preliminaries](#-technical-preliminaries)
+	- [Approach](#-approach)
 	- [Feature Transformations Flowchart](#-Feature-Transformations-Flowchart)
 	- [Principal Component Analysis (PCA)](#-Principal-Component-Analysis-(PCA))
+- [System Design](#-system-design)
 	- [Model Training Flowchart](#-Model-Training-Flowchart)
 	- [Support Vector Regression (SVR)](#-Support-Vector-Regression-(SVR))
 	- [Bayesian Ridge Regression (BRR))](#-Bayesian-Ridge-Regression-(BRR))
@@ -28,6 +31,8 @@
 </br></br>
 
 ## ◘ Introduction
+
+### • Background
 Solar irradiance is the amount of power per unit area (surface power density) that is received from the Sun in the form of electromagnetic radiation in the wavelength range of the measuring device. 
 The radiation reaching the earth's surface can be represented in a number of different ways. Global Horizontal Irradiance (GHI) is the total amount of shortwave radiation received from above by a surface horizontal to the ground. It is important to point out that the sum can be correctly acquired after accounting for the solar zenith angle of the Sun z and diffuse horizontal irradiance:
 
@@ -42,7 +47,7 @@ The Irradiance can be observed and measured at the Earth's surface after atmosph
 
 </br></br>
 
-### ◘ Objective
+### • Objective
 The primary initiative of this research is to:
 * Create a benchmark study of how different algorithms can affect the overall generalizability of the model.
 * Apply various transformation techniques to increase the effectiveness of the data.
@@ -52,7 +57,9 @@ The primary initiative of this research is to:
 
 </br></br>
 
-### ◘ Approach
+## ◘ Technical Preliminaries
+
+### • Approach
 * Process and convert the modified data to increase the interpretability of the models.
 * Correctly generalize a decision boundary for the Predictor and the Response Variables.
 * Partition of the data to devise Training and Test samples.
@@ -62,29 +69,25 @@ The primary initiative of this research is to:
 * Appy all the information to initiate the training procedure of the models
 * Evaluate the model performance and pinpoint the strengths and weaknesses.
 
-</br>
+</br></br>
 
-### ◘ Feature Transformations Flowchart
-![alt text](https://github.com/shahriar-rahman/GHI-Assessment-using-SVR-and-BRR/blob/main/img/Flow1.JPG)
-
-</br>
-
-
-### Principal Component Analysis (PCA)
+### • Principal Component Analysis (PCA)
 In this case study, the acquired dataset contains attributes that can be considered correlated despite some inconsistencies that primarily stem due to seasonal alterations and other variables not present in the weather data. The multiple explanatory variables in the multiple regression model being highly linearly related, can cause a multicollinearity issue. This would lead to the model finding it challenging to interpret the coefficients, resulting in reduced power of the model to identify independent variables that are statistically significant, which would be a serious problem. To address this issue,PCA is applied and combined with the Cross Validation technique to find an average score for all the predictor variables involved.
 
 </br>
 
 PCA is commonly applied in exploratory data analysis and for making predictive models and is mostly used for dimensionality reduction by projecting each data point onto only the first few principal components to obtain lower-dimensional data while preserving as much of the data's variation as possible. The principal components of a collection of points in a real coordinate space are a sequence of *p-unit* vectors, where the *i*th vector is the direction of a line that best fits the data while being orthogonal to the first *i-1* vectors. Therefore, the PCA technique is utilized for analyzing large datasets containing many dimensions/features per observation, increasing the interpretability of the data by reducing the dimensionality of a dataset while preserving the maximum amount of information, and enabling the visualization of multidimensional data. 
 
+</br></br>
+
+## ◘ System Design
+
+### • Feature Transformations Flowchart
+![alt text](https://github.com/shahriar-rahman/GHI-Assessment-using-SVR-and-BRR/blob/main/img/Flow1.JPG)
+
 </br>
 
-### ◘ Model Training Flowchart
-![alt text](https://github.com/shahriar-rahman/GHI-Assessment-using-SVR-and-BRR/blob/main/img/Flow2.JPG)
-
-</br>
-
-### ◘ Support Vector Regression (SVR)
+### • Support Vector Regression (SVR)
 SVR is a regression function that is generalized by Support Vector Machines - a machine learning model used for data classification on continuous data. In simple regression, the idea is to minimize the error rate while in SVR the idea is to fit the error inside a certain threshold which means, the work of SVR is to approximate the best value within a given margin by finding the optimal decision boundary that maximally separates different points. Such regression line is represented as:
 
 </br>
@@ -98,9 +101,14 @@ x: Explanatory variable
 b: Bias term
 ```
 
-</br></br>
+</br>
 
-### ◘ Bayesian Ridge Regression (BRR)
+### • Model Training Flowchart
+![alt text](https://github.com/shahriar-rahman/GHI-Assessment-using-SVR-and-BRR/blob/main/img/Flow2.JPG)
+
+</br>
+
+### • Bayesian Ridge Regression (BRR)
 BRR follows Bayes' theorem which describes the conditional probability of an event based on prior knowledge of conditions that might be related to the event. Since Bayesian statistics treat probability as a degree of belief, Bayes' theorem can directly assign a probability distribution that quantifies the belief to the parameter or set of parameters. As a result, BRR allows a natural mechanism to survive insufficient data or poorly distributed data by formulating linear regression using probability distribution rather than point estimates. The output or response ‘y’ is assumed to be drawn from a probability distribution rather than estimation as a single value.  Mathematically, to obtain a fully probabilistic model the response y is assumed to be Gaussian distributed around Xw as follows:
 
 </br>
@@ -113,7 +121,7 @@ and a is the penalty coefficient
 
 </br>
 
-### ◘ Model Testing Flowchart
+### • Model Testing Flowchart
 ![alt text](https://github.com/shahriar-rahman/GHI-Assessment-using-SVR-and-BRR/blob/main/img/Flow3.JPG)
 
 </br></br>
