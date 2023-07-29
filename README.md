@@ -16,10 +16,12 @@
 	- [Principal Component Analysis](#-principal-component-analysis)
 - [System Design](#-system-design)
 	- [Model Training Flowchart](#-model-training-flowchart)
-	- [Support Vector Regression (SVR)](#-support-vector-regression)
-	- [Bayesian Ridge Regression (BRR))](#-bayesian-ridge-regression)
+	- [Support Vector Regression)](#-support-vector-regression)
+	- [Bayesian Ridge Regression)](#-bayesian-ridge-regression)
 	- [Model Testing Flowchart](#-model-testing-flowchart)
 - [Performance Analysis](#-performance-analysis)
+	- [Component Evaluation using Cross Validation](#-component-evaluation-using-cross-validation)
+ 	- [CV Scores Graph by applying PCA-SVR](#-cv-scores-graph-by-applying-pca-svr)
 	- [Model Evaluation](#-model-evaluation)
 - [Project Organization](#-project-organization)
 - [Libraries & Technologies utilized](#-libraries-&-technologies-utilized)
@@ -142,6 +144,17 @@ and a is the penalty coefficient
 | 9 | 0.0020 | 7.32e-06 |
 | 10 | 0.0020 | 7.33e-06 |
 
+</br>
+
+### • CV Scores Graph by applying PCA-SVR
+![alt text](https://github.com/shahriar-rahman/GHI-Assessment-using-SVR-and-BRR/blob/main/graphs/cv_score_comparison_svr.png)
+
+</br>
+
+### • CV Score Graph by applying PCA-BRR
+![alt text](https://github.com/shahriar-rahman/GHI-Assessment-using-SVR-and-BRR/blob/main/graphs/cv_score_comparison_brr.png)
+
+</br>
 
 ### • Model Evaluation
 | **Measurement** | **SVR Training** | **BRR Training** | **SVR Test** | **BRR Test** |
