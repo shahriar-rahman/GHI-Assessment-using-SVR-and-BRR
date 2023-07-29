@@ -23,8 +23,6 @@
 	- [Component Evaluation using Cross Validation](#-component-evaluation-using-cross-validation)
  	- [CV Score Graphs Analysis](#-cv-score-graph-analysis)
   	- [Grid CV Analysis](#-grid-cv-assessment)
-	  	- [PCA-SVR](#-pca-svr)
-  		- [PCA-BRR](#-pca-brr)
 	- [Model Evaluation](#-model-evaluation)
 	- [Residual Loss Comparison](#-model-evaluation)
 - [Project Organization](#-project-organization)
@@ -183,6 +181,25 @@ and a is the penalty coefficient
 | RMSE | 0.0392 | 0.0026 | 0.0387 | 0.0834 |
 | R-Squared | 0.9751 | 0.9998 | 0.9780 | 0.8977 |
 
+</br>
+### • Residual Loss Comparison
+
+### SVR Training
+![alt text](https://github.com/shahriar-rahman/GHI-Assessment-using-SVR-and-BRR/blob/main/graphs/residual_loss_train_svr.png)
+
+</br>
+
+### SVR Testing
+![alt text](https://github.com/shahriar-rahman/GHI-Assessment-using-SVR-and-BRR/blob/main/graphs/residual_loss_test_svr.png)
+
+### BRR Training
+![alt text](https://github.com/shahriar-rahman/GHI-Assessment-using-SVR-and-BRR/blob/main/graphs/residual_loss_train_brr.png)
+
+</br>
+
+### BRR Testing
+![alt text](https://github.com/shahriar-rahman/GHI-Assessment-using-SVR-and-BRR/blob/main/graphs/residual_loss_test_brr.png)
+</br>
 
 <br/><br/>
 
