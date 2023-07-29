@@ -7,7 +7,39 @@
 
 </br>
 
-### ◘ Introduction
+- [Introduction](#-introduction)
+	- [Background](#-background)
+	- [Objective](#-objective)
+- [Technical Preliminaries](#-technical-preliminaries)
+	- [Approach](#-approach)
+	- [Feature Transformations Flowchart](#-feature-transformations-flowchart)
+	- [Principal Component Analysis](#-principal-component-analysis)
+- [System Design](#-system-design)
+	- [Model Training Flowchart](#-model-training-flowchart)
+	- [Support Vector Regression](#-support-vector-regression)
+	- [Bayesian Ridge Regression](#-bayesian-ridge-regression)
+	- [Model Testing Flowchart](#-model-testing-flowchart)
+- [Performance Analysis](#-performance-analysis)
+	- [Component Evaluation using Cross Validation](#-component-evaluation-using-cross-validation)
+ 	- [CV Score Graphs Analysis](#-cv-score-graph-analysis)
+  	- [Grid CV Analysis](#-grid-cv-assessment)
+	  	- [PCA-SVR](#-pca-svr)
+  		- [PCA-BRR](#-pca-brr)
+	- [Model Evaluation](#-model-evaluation)
+	- [Residual Loss Comparison](#-model-evaluation)
+- [Project Organization](#-project-organization)
+- [Libraries & Technologies utilized](#-libraries-&-technologies-utilized)
+- [Module Installation (setup.py)](#-module-installation)
+- [Python Library Installation (using pip)](#-python-library-installation)
+- [Supplementary Resources](#-supplementary-resources)
+- [License](#-license)
+
+
+</br></br>
+
+## ◘ Introduction
+
+### • Background
 Solar irradiance is the amount of power per unit area (surface power density) that is received from the Sun in the form of electromagnetic radiation in the wavelength range of the measuring device. 
 The radiation reaching the earth's surface can be represented in a number of different ways. Global Horizontal Irradiance (GHI) is the total amount of shortwave radiation received from above by a surface horizontal to the ground. It is important to point out that the sum can be correctly acquired after accounting for the solar zenith angle of the Sun z and diffuse horizontal irradiance:
 
@@ -22,7 +54,7 @@ The Irradiance can be observed and measured at the Earth's surface after atmosph
 
 </br></br>
 
-### ◘ Objective
+### • Objective
 The primary initiative of this research is to:
 * Create a benchmark study of how different algorithms can affect the overall generalizability of the model.
 * Apply various transformation techniques to increase the effectiveness of the data.
@@ -32,7 +64,9 @@ The primary initiative of this research is to:
 
 </br></br>
 
-### ◘ Approach
+## ◘ Technical Preliminaries
+
+### • Approach
 * Process and convert the modified data to increase the interpretability of the models.
 * Correctly generalize a decision boundary for the Predictor and the Response Variables.
 * Partition of the data to devise Training and Test samples.
@@ -42,30 +76,31 @@ The primary initiative of this research is to:
 * Appy all the information to initiate the training procedure of the models
 * Evaluate the model performance and pinpoint the strengths and weaknesses.
 
-</br>
+</br></br>
 
-### ◘ Feature Transformations Flowchart
+### • Feature Transformations Flowchart
 ![alt text](https://github.com/shahriar-rahman/GHI-Assessment-using-SVR-and-BRR/blob/main/img/Flow1.JPG)
 
 </br>
 
-
-### Principal Component Analysis (PCA)
+### • Principal Component Analysis
 In this case study, the acquired dataset contains attributes that can be considered correlated despite some inconsistencies that primarily stem due to seasonal alterations and other variables not present in the weather data. The multiple explanatory variables in the multiple regression model being highly linearly related, can cause a multicollinearity issue. This would lead to the model finding it challenging to interpret the coefficients, resulting in reduced power of the model to identify independent variables that are statistically significant, which would be a serious problem. To address this issue,PCA is applied and combined with the Cross Validation technique to find an average score for all the predictor variables involved.
 
 </br>
 
-PCA is commonly applied in exploratory data analysis and for making predictive models and is mostly used for dimensionality reduction by projecting each data point onto only the first few principal components to obtain lower-dimensional data while preserving as much of the data's variation as possible. The principal components of a collection of points in a real coordinate space are a sequence of *p-unit* vectors, where the *i*th vector is the direction of a line that best fits the data while being orthogonal to the first *i-1* vectors. Therefore, the PCA technique is utilized for analyzing large datasets containing many dimensions/features per observation, increasing the interpretability of the data by reducing the dimensionality of a dataset while preserving the maximum amount of information, and enabling the visualization of multidimensional data. 
+Principal Component Analysis (PCA) is commonly applied in exploratory data analysis and for making predictive models and is mostly used for dimensionality reduction by projecting each data point onto only the first few principal components to obtain lower-dimensional data while preserving as much of the data's variation as possible. The principal components of a collection of points in a real coordinate space are a sequence of *p-unit* vectors, where the *i*th vector is the direction of a line that best fits the data while being orthogonal to the first *i-1* vectors. Therefore, the PCA technique is utilized for analyzing large datasets containing many dimensions/features per observation, increasing the interpretability of the data by reducing the dimensionality of a dataset while preserving the maximum amount of information, and enabling the visualization of multidimensional data. 
 
-</br>
+</br></br>
 
-### ◘ Model Training Flowchart
+## ◘ System Design
+
+### • Model Training Flowchart
 ![alt text](https://github.com/shahriar-rahman/GHI-Assessment-using-SVR-and-BRR/blob/main/img/Flow2.JPG)
 
 </br>
 
-### ◘ Support Vector Regression (SVR)
-SVR is a regression function that is generalized by Support Vector Machines - a machine learning model used for data classification on continuous data. In simple regression, the idea is to minimize the error rate while in SVR the idea is to fit the error inside a certain threshold which means, the work of SVR is to approximate the best value within a given margin by finding the optimal decision boundary that maximally separates different points. Such regression line is represented as:
+### • Support Vector Regression
+Support Vector Regression (SVR) is a regression function that is generalized by Support Vector Machines - a machine learning model used for data classification on continuous data. In simple regression, the idea is to minimize the error rate while in SVR the idea is to fit the error inside a certain threshold which means, the work of SVR is to approximate the best value within a given margin by finding the optimal decision boundary that maximally separates different points. Such regression line is represented as:
 
 </br>
 
@@ -78,10 +113,10 @@ x: Explanatory variable
 b: Bias term
 ```
 
-</br></br>
+</br>
 
-### ◘ Bayesian Ridge Regression (BRR)
-BRR follows Bayes' theorem which describes the conditional probability of an event based on prior knowledge of conditions that might be related to the event. Since Bayesian statistics treat probability as a degree of belief, Bayes' theorem can directly assign a probability distribution that quantifies the belief to the parameter or set of parameters. As a result, BRR allows a natural mechanism to survive insufficient data or poorly distributed data by formulating linear regression using probability distribution rather than point estimates. The output or response ‘y’ is assumed to be drawn from a probability distribution rather than estimation as a single value.  Mathematically, to obtain a fully probabilistic model the response y is assumed to be Gaussian distributed around Xw as follows:
+### • Bayesian Ridge Regression
+Bayesian Ridge Regression (BRR) follows Bayes' theorem which describes the conditional probability of an event based on prior knowledge of conditions that might be related to the event. Since Bayesian statistics treat probability as a degree of belief, Bayes' theorem can directly assign a probability distribution that quantifies the belief to the parameter or set of parameters. As a result, BRR allows a natural mechanism to survive insufficient data or poorly distributed data by formulating linear regression using probability distribution rather than point estimates. The output or response ‘y’ is assumed to be drawn from a probability distribution rather than estimation as a single value.  Mathematically, to obtain a fully probabilistic model the response y is assumed to be Gaussian distributed around Xw as follows:
 
 </br>
 
@@ -93,12 +128,54 @@ and a is the penalty coefficient
 
 </br>
 
-### ◘ Model Testing Flowchart
+### • Model Testing Flowchart
 ![alt text](https://github.com/shahriar-rahman/GHI-Assessment-using-SVR-and-BRR/blob/main/img/Flow3.JPG)
 
 </br></br>
+## ◘ Performance Analysis
 
-### Model Evaluation
+### • Component Evaluation using Cross Validation
+| Components | SVR (MSE) | BRR (MSE) |
+|--|--|--|
+| 1 | 0.0060 | 0.0025 |
+| 2 | 0.0052 | 0.0021 |
+| 3 | 0.0023 | 0.0020 |
+| 4 | 0.0037 | 0.0018 |
+| 5 | 0.0019 | 0.0017 |
+| 6 | 0.0020 | 0.0015 |
+| 7 | 0.0020 | 2.75e-05 |
+| 8 | 0.0020 | 1.98e-05 |
+| 9 | 0.0020 | 7.32e-06 |
+| 10 | 0.0020 | 7.33e-06 |
+
+</br>
+
+### • CV Score Graphs Analysis
+
+### PCA-SVR
+![alt text](https://github.com/shahriar-rahman/GHI-Assessment-using-SVR-and-BRR/blob/main/graphs/cv_score_comparison_svr.png)
+
+</br>
+
+### PCA-BRR
+![alt text](https://github.com/shahriar-rahman/GHI-Assessment-using-SVR-and-BRR/blob/main/graphs/cv_score_comparison_brr.png)
+
+</br>
+
+### • Grid CV Assessment
+| Hyperparameters | SVR | BRR | 
+|--|--|--|
+| Alpha | N/A | 3e-06 |
+| Lambda | N/A | 1e-06 |
+| Iteration | N/A | 200 |
+| Regularization | 1.0 | N/A |
+| Epsilon | 0.1 | N/A |
+| Kernel | Radial Basis Function | N/A |
+| Ideal Score | -0.0016 | -7.32e-06 |
+
+</br>
+
+### • Model Evaluation
 | **Measurement** | **SVR Training** | **BRR Training** | **SVR Test** | **BRR Test** |
 | -- | -- | -- | -- | -- |
 | MSE | 0.0015 | 7.27e-06 | 0.0015 | 6.94e-3 |   
@@ -109,7 +186,7 @@ and a is the penalty coefficient
 
 <br/><br/>
 
-### ◘ Project Organization
+## ◘ Project Organization
 ------------
     ├─-- LICENSE
     |
@@ -161,7 +238,107 @@ and a is the penalty coefficient
 
 <br/><br/>
 
+### ◘ Libraries & Technologies utilized
+* matplotlib~=3.7.1
+* polars~=0.18.8
+* seaborn~=0.12.2
+* scikit-learn~=1.2.2
+* missingno~=0.5.2
+* numpy~=1.24.2
+* joblib~=1.2.0
+* setuptools~=65.5.1
 
-### *ReadMe Construction still in Progress...*
 
-</br>
+<br/><br/>
+
+
+<br/><br/>
+
+### ◘ Module Installation
+Using setup.py:
+1. To use the *setup.py* file in Python, the first objective is to have the *setuptools* module installed. It can be accomplished by running the following command:
+```
+pip install setuptools                                     
+```
+2. Once the setuptools module is installed, use the setup.py file to build and distribute the Python package by running the following command:
+```
+python setup.py sdist bdist_wheel
+```
+3. In order to install the my_package package, run the following command:
+```
+pip install my_package                                 
+```
+4. This command will install all the requirements:
+```
+pip install .                                 
+```
+5. This will install the my_package package and any of its dependencies that are not already installed on your system. Once the package is installed, you can use it in your Python programs by importing it like any other module. For example:
+```
+import my_package                                
+```
+
+<br/><br/>
+
+### ◘ Python Library Installation
+using pip:
+In order to *install* the required packages on the local machine, Open pip and run the following commands separately:
+```
+> pip install setuptools                    
+
+> pip install polars                                                          
+
+> pip install scikit-learn                                      
+
+> pip install seaborn
+
+> pip install matplotlib
+
+> pip install missingno
+
+> pip install numpy
+
+> pip install joblib                                  
+```
+
+<br/><br/>
+
+### ◘ Supplementary Resources
+For more details, visit the following links:
+* https://pypi.org/project/setuptools/
+* https://pypi.org/project/polars/
+* https://pypi.org/project/scikit-learn/
+* https://pypi.org/project/seaborn/
+* https://pypi.org/project/matplotlib/
+* https://pypi.org/project/missingno/
+* https://pypi.org/project/numpy/
+* https://pypi.org/project/joblib/
+
+<br/><br/>
+
+## ◘ License
+
+### • MIT License
+Copyright (c) 2023 Shahriar Rahman
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+<br/>
+
+===========================================================================
+
