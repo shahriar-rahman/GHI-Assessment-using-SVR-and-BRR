@@ -128,6 +128,21 @@ and a is the penalty coefficient
 </br></br>
 ## ◘ Performance Analysis
 
+### • Component Evaluation using Cross Validation
+| Components | SVR (MSE) | BRR (MSE) |
+|--|--|--|
+| 1 | 0.0060 | 0.0025 |
+| 2 | 0.0052 | 0.0021 |
+| 3 | 0.0023 | 0.0020 |
+| 4 | 0.0037 | 0.0018 |
+| 5 | 0.0019 | 0.0017 |
+| 6 | 0.0020 | 0.0015 |
+| 7 | 0.0020 | 2.75e-05 |
+| 8 | 0.0020 | 1.98e-05 |
+| 9 | 0.0020 | 7.32e-06 |
+| 10 | 0.0020 | 7.33e-06 |
+
+
 ### • Model Evaluation
 | **Measurement** | **SVR Training** | **BRR Training** | **SVR Test** | **BRR Test** |
 | -- | -- | -- | -- | -- |
