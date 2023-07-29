@@ -24,7 +24,7 @@
  	- [CV Score Graphs Analysis](#-cv-score-graph-analysis)
   	- [Grid CV Analysis](#-grid-cv-assessment)
 	- [Model Evaluation](#-model-evaluation)
-	- [Residual Loss Comparison](#-model-evaluation)
+	- [Residual Loss Comparison](#-residual-loss-comparison)
 - [Project Organization](#-project-organization)
 - [Libraries & Technologies utilized](#-libraries-&-technologies-utilized)
 - [Module Installation (setup.py)](#-module-installation)
@@ -182,6 +182,7 @@ and a is the penalty coefficient
 | R-Squared | 0.9751 | 0.9998 | 0.9780 | 0.8977 |
 
 </br>
+
 ### • Residual Loss Comparison
 
 ### SVR Training
