@@ -25,7 +25,7 @@
   	- [Grid CV Analysis](#-grid-cv-assessment)
 	- [Model Evaluation](#-model-evaluation)
 	- [Residual Loss Comparison](#-residual-loss-comparison)
-- [Research Specification](#-research-specification)
+- [Research Specifications](#-research-specification)
 	- [Project Organization](#-project-organization)
 	- [Libraries & Technologies utilized](#-libraries-&-technologies-utilized)
 - [Installation](#-installation)
