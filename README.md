@@ -21,8 +21,8 @@
 	- [Model Testing Flowchart](#-model-testing-flowchart)
 - [Performance Analysis](#-performance-analysis)
 	- [Component Evaluation using Cross Validation](#-component-evaluation-using-cross-validation)
- 	- [CV Scores Graph by applying PCA-SVR](#-cv-scores-graph-by-applying-pca-svr)
- 	- [CV Scores Graph by applying PCA-BRR](#-cv-scores-graph-by-applying-pca-brr)
+ 	- [CV Scores Graph by applying PCA-SVR](#-cv-score-graph-by-applying-pca-svr)
+ 	- [CV Scores Graph by applying PCA-BRR](#-cv-score-graph-by-applying-pca-brr)
 	- [Model Evaluation](#-model-evaluation)
 - [Project Organization](#-project-organization)
 - [Libraries & Technologies utilized](#-libraries-&-technologies-utilized)
@@ -147,7 +147,7 @@ and a is the penalty coefficient
 
 </br>
 
-### • CV Scores Graph by applying PCA-SVR
+### • CV Score Graph by applying PCA-SVR
 ![alt text](https://github.com/shahriar-rahman/GHI-Assessment-using-SVR-and-BRR/blob/main/graphs/cv_score_comparison_svr.png)
 
 </br>
