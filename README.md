@@ -19,7 +19,8 @@
 	- [Support Vector Regression (SVR)](#-support-vector-regression)
 	- [Bayesian Ridge Regression (BRR))](#-bayesian-ridge-regression)
 	- [Model Testing Flowchart](#-model-testing-flowchart)
-- [Model Evaluation](#-model-evaluation)
+- [Performance Analysis](#-performance-analysis)
+	- [Model Evaluation](#-model-evaluation)
 - [Project Organization](#-project-organization)
 - [Libraries & Technologies utilized](#-libraries-&-technologies-utilized)
 - [Module Installation (setup.py)](#-module-installation)
@@ -125,8 +126,9 @@ and a is the penalty coefficient
 ![alt text](https://github.com/shahriar-rahman/GHI-Assessment-using-SVR-and-BRR/blob/main/img/Flow3.JPG)
 
 </br></br>
+## ◘ Performance Analysis
 
-## ◘ Model Evaluation
+### • Model Evaluation
 | **Measurement** | **SVR Training** | **BRR Training** | **SVR Test** | **BRR Test** |
 | -- | -- | -- | -- | -- |
 | MSE | 0.0015 | 7.27e-06 | 0.0015 | 6.94e-3 |   
