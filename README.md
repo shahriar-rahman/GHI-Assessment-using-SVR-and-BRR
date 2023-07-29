@@ -27,10 +27,10 @@
 	- [Residual Loss Comparison](#-residual-loss-comparison)
 - [Research Specifications](#-research-specifications)
 	- [Project Organization](#-project-organization)
-	- [Libraries & Technologies utilized](#-libraries-and-technologies)
+	- [Libraries & Technologies](#-libraries-and-technologies)
 - [Installation](#-installation)
 	- [Module Installation](#-module-installation)
-	- [Library Installation](#-python-library-installation)
+	- [Library Installation](#-library-installation)
 	- [Supplementary Resources](#-supplementary-resources)
 - [License](#-license)
 
