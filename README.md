@@ -25,11 +25,13 @@
   	- [Grid CV Analysis](#-grid-cv-assessment)
 	- [Model Evaluation](#-model-evaluation)
 	- [Residual Loss Comparison](#-residual-loss-comparison)
-- [Project Organization](#-project-organization)
-- [Libraries & Technologies utilized](#-libraries-&-technologies-utilized)
-- [Module Installation (setup.py)](#-module-installation)
-- [Python Library Installation (using pip)](#-python-library-installation)
-- [Supplementary Resources](#-supplementary-resources)
+- [Research Specification](#-research-specification)
+	- [Project Organization](#-project-organization)
+	- [Libraries & Technologies utilized](#-libraries-&-technologies-utilized)
+- [Installation](#-installation)
+	- [Module Installation](#-module-installation)
+	- [Library Installation](#-python-library-installation)
+	- [Supplementary Resources](#-supplementary-resources)
 - [License](#-license)
 
 
@@ -204,7 +206,9 @@ and a is the penalty coefficient
 
 <br/><br/>
 
-## ◘ Project Organization
+## ◘ Research Specifications
+
+### • Project Organization
 ------------
     ├─-- LICENSE
     |
@@ -254,9 +258,9 @@ and a is the penalty coefficient
     ├─
 --------
 
-<br/><br/>
+<br/>
 
-### ◘ Libraries & Technologies utilized
+### • Libraries & Technologies utilized
 * matplotlib~=3.7.1
 * polars~=0.18.8
 * seaborn~=0.12.2
@@ -266,13 +270,11 @@ and a is the penalty coefficient
 * joblib~=1.2.0
 * setuptools~=65.5.1
 
-
 <br/><br/>
 
+## ◘ Installation
 
-<br/><br/>
-
-### ◘ Module Installation
+### • Module Installation
 Using setup.py:
 1. To use the *setup.py* file in Python, the first objective is to have the *setuptools* module installed. It can be accomplished by running the following command:
 ```
@@ -295,10 +297,10 @@ pip install .
 import my_package                                
 ```
 
-<br/><br/>
+<br/>
 
-### ◘ Python Library Installation
-using pip:
+### • Library Installation
+Using pip:
 In order to *install* the required packages on the local machine, Open pip and run the following commands separately:
 ```
 > pip install setuptools                    
@@ -318,9 +320,9 @@ In order to *install* the required packages on the local machine, Open pip and r
 > pip install joblib                                  
 ```
 
-<br/><br/>
+<br/>
 
-### ◘ Supplementary Resources
+### • Supplementary Resources
 For more details, visit the following links:
 * https://pypi.org/project/setuptools/
 * https://pypi.org/project/polars/
