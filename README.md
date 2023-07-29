@@ -21,10 +21,10 @@
 	- [Model Testing Flowchart](#-model-testing-flowchart)
 - [Performance Analysis](#-performance-analysis)
 	- [Component Evaluation using Cross Validation](#-component-evaluation-using-cross-validation)
- 	- [CV Scores Graph by applying PCA-SVR](#-cv-score-graph-by-applying-pca-svr)
- 	- [CV Scores Graph by applying PCA-BRR](#-cv-score-graph-by-applying-pca-brr)
+ 	- [CV Score Graphs Analysis](#-cv-score-graph-analysis)
   	- [Grid CV Analysis](#-grid-cv-assessment)
 	- [Model Evaluation](#-model-evaluation)
+	- [Residual Loss Comparison](#-model-evaluation)
 - [Project Organization](#-project-organization)
 - [Libraries & Technologies utilized](#-libraries-&-technologies-utilized)
 - [Module Installation (setup.py)](#-module-installation)
@@ -148,12 +148,11 @@ and a is the penalty coefficient
 
 </br>
 
-### • CV Score Graph by applying PCA-SVR
+### • CV Score Graphs Analysis
 ![alt text](https://github.com/shahriar-rahman/GHI-Assessment-using-SVR-and-BRR/blob/main/graphs/cv_score_comparison_svr.png)
 
 </br>
 
-### • CV Score Graph by applying PCA-BRR
 ![alt text](https://github.com/shahriar-rahman/GHI-Assessment-using-SVR-and-BRR/blob/main/graphs/cv_score_comparison_brr.png)
 
 </br>
