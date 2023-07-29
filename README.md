@@ -152,14 +152,12 @@ and a is the penalty coefficient
 
 ### • CV Score Graphs Analysis
 
-</br>
-
-### ○ PCA-SVR
+### PCA-SVR
 ![alt text](https://github.com/shahriar-rahman/GHI-Assessment-using-SVR-and-BRR/blob/main/graphs/cv_score_comparison_svr.png)
 
 </br>
 
-### ○ PCA-BRR
+### PCA-BRR
 ![alt text](https://github.com/shahriar-rahman/GHI-Assessment-using-SVR-and-BRR/blob/main/graphs/cv_score_comparison_brr.png)
 
 </br>
