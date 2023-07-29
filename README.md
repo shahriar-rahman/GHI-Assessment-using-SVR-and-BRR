@@ -23,7 +23,7 @@
 	- [Component Evaluation using Cross Validation](#-component-evaluation-using-cross-validation)
  	- [CV Scores Graph by applying PCA-SVR](#-cv-score-graph-by-applying-pca-svr)
  	- [CV Scores Graph by applying PCA-BRR](#-cv-score-graph-by-applying-pca-brr)
-  	- [Grid CV Analysis](#-grid-cv-analysis)
+  	- [Grid CV Analysis](#-grid-cv-assessment)
 	- [Model Evaluation](#-model-evaluation)
 - [Project Organization](#-project-organization)
 - [Libraries & Technologies utilized](#-libraries-&-technologies-utilized)
@@ -158,8 +158,9 @@ and a is the penalty coefficient
 
 </br>
 
-### • Grid CV Analysis
+### • Grid CV Assessment
 | Hyperparameters | SVR | BRR | 
+|--|--|--|
 | Alpha | N/A | 3e-06 |
 | Lambda | N/A | 1e-06 |
 | Iteration | N/A | 200 |
