@@ -5,7 +5,25 @@
 
 ![alt text](https://github.com/shahriar-rahman/GHI-Assessment-using-SVR-and-BRR/blob/main/img/solarA.jpg)
 
-</br>
+</br></br>
+
+* [Introduction](#Introduction)
+* [Important Notes](#important-notes)
+	* [Session Table Collation](#session-table-collation)
+* [Usage](#usage)
+	* [Use an existing MySQL connection or pool](#use-an-existing-mysql-connection-or-pool)
+	* [Closing the session store](#closing-the-session-store)
+	* [Options](#options)
+		* [Custom database table schema](#custom-database-table-schema)
+	* [Debugging](#debugging)
+* [Contributing](#contributing)
+	* [Configure Local Environment](#configure-local-environment)
+	* [Tests](#tests)
+* [Changelog](#changelog)
+* [License](#license)
+
+
+</br></br>
 
 ### ◘ Introduction
 Solar irradiance is the amount of power per unit area (surface power density) that is received from the Sun in the form of electromagnetic radiation in the wavelength range of the measuring device. 
