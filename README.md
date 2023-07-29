@@ -7,22 +7,22 @@
 
 </br>
 
-* [Introduction](#-introduction)
-	* [Objective](#-objective)
-* [Approach](#-approach)
-	* [Feature Transformations Flowchart](#-Feature-Transformations-Flowchart)
-	* [Principal Component Analysis (PCA)](#-Principal-Component-Analysis-(PCA))
-	* [Model Training Flowchart](#-Model-Training-Flowchart)
-	* [Support Vector Regression (SVR)](#-Support-Vector-Regression-(SVR))
-	* [Bayesian Ridge Regression (BRR))](#-Bayesian-Ridge-Regression-(BRR))
-	* [Model Testing  Flowchart](#-Model-Testing-Flowchart)
-* [Model Evaluation](#-Model-Evaluation)
-* [Project Organization](#-Project-Organization)
-* [Libraries & Technologies utilized](#-Libraries-&-Technologies-utilized)
-* [Module Installation (setup.py)](#-Module-Installation-(setup.py))
-* [Python Library Installation (using pip)](#-Python-Library-Installation-(using-pip))
-* [Supplementary Resources](#-Supplementary-Resources)
-* [MIT License](#-MIT-License)
+- [Introduction](#-introduction)
+- [Objective](#-objective)
+- [Approach](#-approach)
+	- [Feature Transformations Flowchart](#-Feature-Transformations-Flowchart)
+	- [Principal Component Analysis (PCA)](#-Principal-Component-Analysis-(PCA))
+	- [Model Training Flowchart](#-Model-Training-Flowchart)
+	- [Support Vector Regression (SVR)](#-Support-Vector-Regression-(SVR))
+	- [Bayesian Ridge Regression (BRR))](#-Bayesian-Ridge-Regression-(BRR))
+	- [Model Testing  Flowchart](#-Model-Testing-Flowchart)
+- [Model Evaluation](#-Model-Evaluation)
+- [Project Organization](#-Project-Organization)
+- [Libraries & Technologies utilized](#-Libraries-&-Technologies-utilized)
+- [Module Installation (setup.py)](#-Module-Installation-(setup.py))
+- [Python Library Installation (using pip)](#-Python-Library-Installation-(using-pip))
+- [Supplementary Resources](#-Supplementary-Resources)
+- [MIT License](#-MIT-License)
 
 
 </br></br>
