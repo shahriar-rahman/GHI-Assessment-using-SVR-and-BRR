@@ -7,7 +7,7 @@
 
 </br></br>
 
-* [Introduction](#introduction)
+* [Introduction](###Introduction)
 * [Important Notes](#important-notes)
 	* [Session Table Collation](#session-table-collation)
 * [Usage](#usage)
