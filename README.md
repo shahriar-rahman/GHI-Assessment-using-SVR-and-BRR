@@ -5,22 +5,24 @@
 
 ![alt text](https://github.com/shahriar-rahman/GHI-Assessment-using-SVR-and-BRR/blob/main/img/solarA.jpg)
 
-</br></br>
+</br>
 
 * [Introduction](#-introduction)
-* [Important Notes](#important-notes)
-	* [Session Table Collation](#session-table-collation)
-* [Usage](#usage)
-	* [Use an existing MySQL connection or pool](#use-an-existing-mysql-connection-or-pool)
-	* [Closing the session store](#closing-the-session-store)
-	* [Options](#options)
-		* [Custom database table schema](#custom-database-table-schema)
-	* [Debugging](#debugging)
-* [Contributing](#contributing)
-	* [Configure Local Environment](#configure-local-environment)
-	* [Tests](#tests)
-* [Changelog](#changelog)
-* [License](#license)
+	* [Objective](#-objective)
+* [Approach](#-approach)
+	* [Feature Transformations Flowchart](#-Feature-Transformations-Flowchart)
+	* [Principal Component Analysis (PCA)](#-Principal-Component-Analysis-(PCA))
+	* [Model Training Flowchart](#-Model-Training-Flowchart)
+	* [Support Vector Regression (SVR)](#-Support-Vector-Regression-(SVR))
+	* [Bayesian Ridge Regression (BRR))](#-Bayesian-Ridge-Regression-(BRR))
+	* [Model Testing  Flowchart](#-Model-Testing-Flowchart)
+* [Model Evaluation](#-Model-Evaluation)
+* [Project Organization](#-Project-Organization)
+* [Libraries & Technologies utilized](#-Libraries-&-Technologies-utilized)
+* [Module Installation (setup.py)](#-Module-Installation-(setup.py))
+* [Python Library Installation (using pip)](#-Python-Library-Installation-(using-pip))
+* [Supplementary Resources](#-Supplementary-Resources)
+* [MIT License](#-MIT-License)
 
 
 </br></br>
