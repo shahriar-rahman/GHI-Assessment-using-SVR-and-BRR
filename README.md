@@ -27,7 +27,7 @@
 	- [Residual Loss Comparison](#-residual-loss-comparison)
 - [Research Specifications](#-research-specifications)
 	- [Project Organization](#-project-organization)
-	- [Libraries & Technologies utilized](#-libraries-and-technologies-utilized)
+	- [Libraries & Technologies utilized](#-libraries-and-technologies)
 - [Installation](#-installation)
 	- [Module Installation](#-module-installation)
 	- [Library Installation](#-python-library-installation)
@@ -260,7 +260,7 @@ and a is the penalty coefficient
 
 <br/>
 
-### • Libraries and Technologies utilized
+### • Libraries and Technologies
 * matplotlib~=3.7.1
 * polars~=0.18.8
 * seaborn~=0.12.2
