@@ -13,7 +13,7 @@
 - [Technical Preliminaries](#-technical-preliminaries)
 	- [Approach](#-approach)
 	- [Feature Transformations Flowchart](#-feature-transformations-flowchart)
-	- [Principal Component Analysis (PCA)](#-principal-component-analysis-(pca))
+	- [Principal Component Analysis (PCA)](#-principal-component-analysis)
 - [System Design](#-system-design)
 	- [Model Training Flowchart](#-Model-Training-Flowchart)
 	- [Support Vector Regression (SVR)](#-Support-Vector-Regression-(SVR))
