@@ -23,6 +23,8 @@
 	- [Component Evaluation using Cross Validation](#-component-evaluation-using-cross-validation)
  	- [CV Score Graphs Analysis](#-cv-score-graph-analysis)
   	- [Grid CV Analysis](#-grid-cv-assessment)
+	  	- [PCA-SVR](#-pca-svr)
+  		- [PCA-BRR](#-pca-brr)
 	- [Model Evaluation](#-model-evaluation)
 	- [Residual Loss Comparison](#-model-evaluation)
 - [Project Organization](#-project-organization)
@@ -149,10 +151,13 @@ and a is the penalty coefficient
 </br>
 
 ### • CV Score Graphs Analysis
+</br>
+### ○ PCA-SVR
 ![alt text](https://github.com/shahriar-rahman/GHI-Assessment-using-SVR-and-BRR/blob/main/graphs/cv_score_comparison_svr.png)
 
 </br>
 
+### ○ PCA-BRR
 ![alt text](https://github.com/shahriar-rahman/GHI-Assessment-using-SVR-and-BRR/blob/main/graphs/cv_score_comparison_brr.png)
 
 </br>
