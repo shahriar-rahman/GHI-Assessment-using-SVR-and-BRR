@@ -14,7 +14,6 @@ setup(
         'matplotlib~=3.7.1',
         'polars~=0.18.8',
         'seaborn~=0.12.2',
-        'sklearn~=0.0.post1',
         'scikit-learn~=1.2.2',
         'missingno~=0.5.2',
         'numpy~=1.24.2',
