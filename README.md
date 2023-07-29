@@ -13,19 +13,19 @@
 - [Technical Preliminaries](#-technical-preliminaries)
 	- [Approach](#-approach)
 	- [Feature Transformations Flowchart](#-feature-transformations-flowchart)
-	- [Principal Component Analysis (PCA)](#-principal-component-analysis)
+	- [Principal Component Analysis](#-principal-component-analysis)
 - [System Design](#-system-design)
-	- [Model Training Flowchart](#-Model-Training-Flowchart)
-	- [Support Vector Regression (SVR)](#-Support-Vector-Regression-(SVR))
-	- [Bayesian Ridge Regression (BRR))](#-Bayesian-Ridge-Regression-(BRR))
-	- [Model Testing  Flowchart](#-Model-Testing-Flowchart)
-- [Model Evaluation](#-Model-Evaluation)
-- [Project Organization](#-Project-Organization)
-- [Libraries & Technologies utilized](#-Libraries-&-Technologies-utilized)
-- [Module Installation (setup.py)](#-Module-Installation-(setup.py))
-- [Python Library Installation (using pip)](#-Python-Library-Installation-(using-pip))
-- [Supplementary Resources](#-Supplementary-Resources)
-- [MIT License](#-MIT-License)
+	- [Model Training Flowchart](#-model-training-flowchart)
+	- [Support Vector Regression (SVR)](#-support-vector-regression)
+	- [Bayesian Ridge Regression (BRR))](#-bayesian-ridge-regression)
+	- [Model Testing Flowchart](#-model-testing-flowchart)
+- [Model Evaluation](#-model-evaluation)
+- [Project Organization](#-project-organization)
+- [Libraries & Technologies utilized](#-libraries-&-technologies-utilized)
+- [Module Installation (setup.py)](#-module-installation)
+- [Python Library Installation (using pip)](#-python-library-installation)
+- [Supplementary Resources](#-supplementary-resources)
+- [License](#-license)
 
 
 </br></br>
@@ -92,8 +92,8 @@ Principal Component Analysis (PCA) is commonly applied in exploratory data analy
 
 </br>
 
-### • Support Vector Regression (SVR)
-SVR is a regression function that is generalized by Support Vector Machines - a machine learning model used for data classification on continuous data. In simple regression, the idea is to minimize the error rate while in SVR the idea is to fit the error inside a certain threshold which means, the work of SVR is to approximate the best value within a given margin by finding the optimal decision boundary that maximally separates different points. Such regression line is represented as:
+### • Support Vector Regression
+Support Vector Regression (SVR) is a regression function that is generalized by Support Vector Machines - a machine learning model used for data classification on continuous data. In simple regression, the idea is to minimize the error rate while in SVR the idea is to fit the error inside a certain threshold which means, the work of SVR is to approximate the best value within a given margin by finding the optimal decision boundary that maximally separates different points. Such regression line is represented as:
 
 </br>
 
@@ -108,8 +108,8 @@ b: Bias term
 
 </br>
 
-### • Bayesian Ridge Regression (BRR)
-BRR follows Bayes' theorem which describes the conditional probability of an event based on prior knowledge of conditions that might be related to the event. Since Bayesian statistics treat probability as a degree of belief, Bayes' theorem can directly assign a probability distribution that quantifies the belief to the parameter or set of parameters. As a result, BRR allows a natural mechanism to survive insufficient data or poorly distributed data by formulating linear regression using probability distribution rather than point estimates. The output or response ‘y’ is assumed to be drawn from a probability distribution rather than estimation as a single value.  Mathematically, to obtain a fully probabilistic model the response y is assumed to be Gaussian distributed around Xw as follows:
+### • Bayesian Ridge Regression
+Bayesian Ridge Regression (BRR) follows Bayes' theorem which describes the conditional probability of an event based on prior knowledge of conditions that might be related to the event. Since Bayesian statistics treat probability as a degree of belief, Bayes' theorem can directly assign a probability distribution that quantifies the belief to the parameter or set of parameters. As a result, BRR allows a natural mechanism to survive insufficient data or poorly distributed data by formulating linear regression using probability distribution rather than point estimates. The output or response ‘y’ is assumed to be drawn from a probability distribution rather than estimation as a single value.  Mathematically, to obtain a fully probabilistic model the response y is assumed to be Gaussian distributed around Xw as follows:
 
 </br>
 
@@ -126,7 +126,7 @@ and a is the penalty coefficient
 
 </br></br>
 
-### ◘ Model Evaluation
+## ◘ Model Evaluation
 | **Measurement** | **SVR Training** | **BRR Training** | **SVR Test** | **BRR Test** |
 | -- | -- | -- | -- | -- |
 | MSE | 0.0015 | 7.27e-06 | 0.0015 | 6.94e-3 |   
@@ -137,7 +137,7 @@ and a is the penalty coefficient
 
 <br/><br/>
 
-### ◘ Project Organization
+## ◘ Project Organization
 ------------
     ├─-- LICENSE
     |
@@ -205,7 +205,8 @@ and a is the penalty coefficient
 
 <br/><br/>
 
-### ◘ Module Installation (setup.py)
+### ◘ Module Installation
+Using setup.py:
 1. To use the *setup.py* file in Python, the first objective is to have the *setuptools* module installed. It can be accomplished by running the following command:
 ```
 pip install setuptools                                     
@@ -229,7 +230,8 @@ import my_package
 
 <br/><br/>
 
-### ◘ Python Library Installation (using pip)
+### ◘ Python Library Installation
+using pip:
 In order to *install* the required packages on the local machine, Open pip and run the following commands separately:
 ```
 > pip install setuptools                    
@@ -264,7 +266,9 @@ For more details, visit the following links:
 
 <br/><br/>
 
-### ◘ MIT License
+## ◘ License
+
+### • MIT License
 Copyright (c) 2023 Shahriar Rahman
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
