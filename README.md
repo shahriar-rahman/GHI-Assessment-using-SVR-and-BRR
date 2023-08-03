@@ -86,7 +86,7 @@ The primary initiative of this research is to:
 </br>
 
 ### • Principal Component Analysis
-In this case study, the acquired dataset contains attributes that can be considered correlated despite some inconsistencies that primarily stem due to seasonal alterations and other variables not present in the weather data. The multiple explanatory variables in the multiple regression model being highly linearly related, can cause a multicollinearity issue. This would lead to the model finding it challenging to interpret the coefficients, resulting in reduced power of the model to identify independent variables that are statistically significant, which would be a serious problem. To address this issue,PCA is applied and combined with the Cross Validation technique to find an average score for all the predictor variables involved.
+In this case study, the acquired dataset contains attributes that can be considered correlated despite some inconsistencies that primarily stem due to seasonal alterations and other variables not present in the weather data. The multiple explanatory variables in the multiple regression model being highly linearly related, can cause a multicollinearity issue. This would lead to the model finding it challenging to interpret the coefficients, resulting in reduced power of the model to identify independent variables that are statistically significant, which would be a serious problem. To address this issue,PCA is applied and combined with the Cross Validation technique to find an average score for all the predictor variables involved. 
 
 </br>
 
