@@ -43,7 +43,7 @@
 
 ### • Background
 Solar irradiance is the amount of power per unit area (surface power density) that is received from the Sun in the form of electromagnetic radiation in the wavelength range of the measuring device. 
-The radiation reaching the earth's surface can be represented in a number of different ways. Global Horizontal Irradiance (GHI) is the total amount of shortwave radiation received from above by a surface horizontal to the ground. It is important to point out that the sum can be correctly acquired after accounting for the solar zenith angle of the Sun z and diffuse horizontal irradiance:
+The radiation reaching the earth's surface can be represented in a number of different ways. Global Horizontal Irradiance (GHI) is the total amount of shortwave radiation received from above by a surface horizontal to the ground. It is important to point out that the sum can be correctly acquired after accounting for the solar zenith angle of the Sun z and diffuse horizontal irradiance: 
 
 </br>
 
